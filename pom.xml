@@ -11,6 +11,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
+      <artifactId>maven-compiler-plugin</artifactId>
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
@@ -23,6 +24,7 @@
         <artifactId>maven-jar-plugin</artifactId>
         <version>3.0.2</version>
         <configuration>
+          <fork>true</fork>  
           <archive>
             <manifest>
               <addClasspath>true</addClasspath>
